@@ -49,6 +49,10 @@ public class LoginPage extends TestBase {
 		//Return object of landing page
 		return new HomePage();
 	}
+	
+	public void DummyMethodForGITUpdate() {
+		System.out.println("DummyMethodForGITUpdate");
+	}
 }
 
 
