@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Google Page Test Automation Complete Test Suite">
+
+<listeners> -->
+	<listener class-name="com.google.qa.ExtentReportListener.ExtentReportListener"/> 
+ </listeners>
+
+
+	<test name="Google Page Test Cases">
+		<classes>
+<!-- 		Sequence will be followed in the order defined below  -->
+
+			<class name="com.google.qa.testcases.LoginPageTest"></class>
+			<class name="com.google.qa.testcases.HomePageTest"></class>
+			<class name="com.google.qa.testcases.ContactsPageTest"></class>
+
+		</classes>
+	</test>
+</suite>

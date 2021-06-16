@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Google Page Test Automation Complete Test Suite]">
+  <listeners>
+    <listener class-name="com.google.qa.ExtentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Google Page Test Cases(failed)">
+    <classes>
+      <class name="com.google.qa.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="HomePageTitleTest"/>
+          <include name="goToDealsLink"/>
+          <include name="setup"/>
+          <include name="goToContactsLink"/>
+          <include name="UserNameTest"/>
+        </methods>
+      </class> <!-- com.google.qa.testcases.HomePageTest -->
+      <class name="com.google.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="googleLogoImageTest"/>
+          <include name="loginPageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.google.qa.testcases.LoginPageTest -->
+      <class name="com.google.qa.testcases.ContactsPageTest">
+        <methods>
+          <include name="selectMultipleContactsTest"/>
+          <include name="selectSingleContactTest"/>
+          <include name="setup"/>
+          <include name="verifyContactsPageLabel"/>
+          <include name="tearDown"/>
+          <include name="validateCreateNewContact"/>
+        </methods>
+      </class> <!-- com.google.qa.testcases.ContactsPageTest -->
+    </classes>
+  </test> <!-- Google Page Test Cases(failed) -->
+</suite> <!-- Failed suite [Google Page Test Automation Complete Test Suite] -->
